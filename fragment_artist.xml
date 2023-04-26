@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    tools:context=".ArtistFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgray"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar3"
+            android:orientation="vertical">
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:indeterminateTint="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading..."></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/artist_table"
+        android:fillViewport="true">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:stretchColumns="1">
+        <TableRow android:paddingBottom="10dp" android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/artist_label_name"
+                android:layout_width="103dp"
+                android:padding="3dip"
+                android:text="Name"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artist_name"
+                android:text="Artist Name"
+                android:padding="3dip"
+                />
+        </TableRow>
+
+        <TableRow  android:paddingBottom="10dp" android:paddingTop="10dp">
+            <TextView
+                android:text="Nationality"
+                android:textStyle="bold"
+                android:id="@+id/artist_label_nationality"
+                android:padding="3dip" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artist_nationality"
+                android:text="Artist Nationality"
+                android:padding="3dip"
+                />
+        </TableRow>
+        <TableRow android:paddingBottom="10dp" android:paddingTop="10dp">
+            <TextView
+                android:text="Birthday"
+                android:textStyle="bold"
+                android:id="@+id/artist_label_birthday"
+                android:padding="3dip" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artist_birthday"
+                android:text="Artist Birthday"
+                android:padding="3dip"
+                />
+        </TableRow>
+        <TableRow android:paddingBottom="10dp" android:paddingTop="10dp">
+            <TextView
+                android:text="Deathday"
+                android:textStyle="bold"
+                android:id="@+id/artist_label_deathday"
+                android:padding="3dip" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artist_deathday"
+                android:text="Artist Deathday"
+                android:padding="3dip"
+                />
+        </TableRow>
+        <TableRow android:paddingBottom="10dp" android:paddingTop="10dp">
+            <TextView
+                android:text="Biography"
+                android:textStyle="bold"
+                android:id="@+id/artist_label_biography"
+                android:padding="3dip" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/artist_biography"
+                android:text="Artist Biography"
+                android:padding="3dip"
+                />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+
+</FrameLayout>

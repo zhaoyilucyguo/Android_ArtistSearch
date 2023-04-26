@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtworksFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/no_artwork"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="10dp"
+        android:gravity="center">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Artwork Available"
+            android:background="@color/lightgray"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"></TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:id="@+id/artworksrecyclerviewid" />
+</FrameLayout>

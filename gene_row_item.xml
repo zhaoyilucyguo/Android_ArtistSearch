@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/no_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Category Available"
+            android:background="@color/lightgray"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"></TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:stretchColumns="1">
+
+        <TableRow android:id="@+id/gene_header" android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:padding="3dip"
+                    android:textColor="@color/black"
+                    android:text="Category"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gene_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:textColor="@color/black"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/gene_href"
+                android:layout_width="171dp"
+                android:layout_height="120dp" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/gene_row">
+
+            <TextView
+                android:layout_height="44dp"
+                android:padding="3dip"
+                android:textColor="@color/black"
+                android:text="Description"
+                android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/gene_description"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="Description" />
+
+
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+</LinearLayout>
